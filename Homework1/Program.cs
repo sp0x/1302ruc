@@ -75,7 +75,8 @@ class Program
         String[] strNums = Console.ReadLine().Trim().Split(',');
         try
         {
-            return int.Parse(strNums[0]) + int.Parse(strNums[1]) + int.Parse(strNums[2]);
+            int ret = int.Parse(strNums[0]) + int.Parse(strNums[1]) + int.Parse(strNums[2]);
+            Console.WriteLine("{0} + {1} + {2} = {3}", strNums[0], strNums[1], strNums[2], ret );
         }
         catch (Exception ex)
         {
@@ -109,7 +110,7 @@ class Program
         //4.	Да се напише програма, която чете две числа от конзолата и разменя стойностите им.
         // 		*Да се направи по два различни начина.
         Console.Write("Въведете 2 числа: ");
-        string[] strNums = Console.ReadLine().Split(' ');
+        string[] strNums = Console.ReadLine().Trim.Replace(",","").Split(' ');
         System.Array.Reverse(strNums);
         Console.WriteLine();
         Console.WriteLine("Разменения резултат e: " + String.Join(" ", strNums));
@@ -120,13 +121,11 @@ class Program
         //      *Да се направи по два различни начина.
         Console.Write("Първо число: ");
         int intA = int.Parse(Console.ReadLine());
-        Console.WriteLine();
         Console.Write("Второ число: ");
         int intB = int.Parse(Console.ReadLine());
         int tmpBuff = intA;
         intA = intB;
-        intB = intA;
-        Console.WriteLine();
+        intB = tmpBuff;
         Console.WriteLine("Разменения резултат е: " + intA.ToString() + intB.ToString());
     }
     #endregion
