@@ -110,7 +110,7 @@ class Program
         //4.	Да се напише програма, която чете две числа от конзолата и разменя стойностите им.
         // 		*Да се направи по два различни начина.
         Console.Write("Въведете 2 числа: ");
-        string[] strNums = Console.ReadLine().Trim.Replace(",","").Split(' ');
+        string[] strNums = Console.ReadLine().Trim().Replace(",","").Split(' ');
         System.Array.Reverse(strNums);
         Console.WriteLine();
         Console.WriteLine("Разменения резултат e: " + String.Join(" ", strNums));
