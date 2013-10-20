@@ -10,6 +10,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1E5B39
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework2", "Homework2", "{C6F7D209-FEBD-430A-8995-C4B8182C64B6}"
+	ProjectSection(SolutionItems) = preProject
+		Homework1\Homework2\task1.cs = Homework1\Homework2\task1.cs
+		Homework1\Homework2\task2.cs = Homework1\Homework2\task2.cs
+		Homework1\Homework2\task3.cs = Homework1\Homework2\task3.cs
+		Homework1\Homework2\task4.cs = Homework1\Homework2\task4.cs
+		Homework1\Homework2\task5.cs = Homework1\Homework2\task5.cs
+		Homework1\Homework2\task6.cs = Homework1\Homework2\task6.cs
+		Homework1\Homework2\task7.cs = Homework1\Homework2\task7.cs
+		Homework1\Homework2\task8.cs = Homework1\Homework2\task8.cs
+		Homework1\Homework2\task9.cs = Homework1\Homework2\task9.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
