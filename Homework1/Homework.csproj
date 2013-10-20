@@ -41,6 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Homework2\task9.cs" />
+    <Compile Include="Homework2\task8.cs" />
+    <Compile Include="Homework2\task1.cs" />
+    <Compile Include="Homework2\task2.cs" />
+    <Compile Include="Homework2\task3.cs" />
+    <Compile Include="Homework2\task4.cs" />
+    <Compile Include="Homework2\task5.cs" />
+    <Compile Include="Homework2\task6.cs" />
+    <Compile Include="Homework2\task7.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

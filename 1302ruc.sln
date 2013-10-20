@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework1", "Homework1\Homework1.csproj", "{DAD9ADF4-30CF-4744-860E-1A1CCF16A58D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework", "Homework1\Homework.csproj", "{DAD9ADF4-30CF-4744-860E-1A1CCF16A58D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1E5B3970-3368-4388-9457-F4F1985B7407}"
 	ProjectSection(SolutionItems) = preProject
