@@ -5,15 +5,15 @@ using System.Linq;
 namespace Homework
 {
     /// <summary>
-    /// 1.	Да се напише програма, която чете петцифрено число abcde:
-    ///     a.	Извежда числото обърнато - edcba.
-    ///     b.	Смята сбора от всичките му цифри.
-    ///     c.	Извежда частното на въведеното число разделено на сбора от цифрите му.
-    ///     d.	Разменя втората му и третата цифра и го разпечатва.
+    /// 1.	пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ abcde:
+    ///     a.	пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - edcba.
+    ///     b.	пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.
+    ///     c.	пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ.
+    ///     d.	пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
     /// </summary>
     public class task1
     {
-        public delegate int sumit();
+       
           public static void main(string[] args)
           {
             int sum = 0;
@@ -21,25 +21,26 @@ namespace Homework
             int inumber = int.Parse(Console.ReadLine());
             char[] chrNums = inumber.ToString().ToCharArray();
 
-            Console.WriteLine("reversed: {0}", strReverse(inumber.ToString()));
-            Console.WriteLine("sum: {0}",  ((sumit)(delegate {
-                foreach (char c in chrNums) { sum += int.Parse(c.ToString()); }
-                return sum;
-            }))());
-            Console.WriteLine("divided: {0}", inumber / sum);
+            Console.WriteLine("reversed: {0}", strReverse( chrNums )); // task1.a
+            
+            foreach(char chr in chrNums)            // 
+            { sum += int.Parse(New String(chr)); }  // task1.b
+            Console.WriteLine("sum: {0}", sum );    // 
+            
+            Console.WriteLine("divided: {0}", inumber / sum); // task1.c
             
 
-            Console.WriteLine("2nd and 3rd num: {0},{1}", chrNums[1], chrNums[2]);
+            Console.WriteLine("2nd and 3rd num: {0},{1}", chrNums[1], chrNums[2]); // task1.d
             char tmp = chrNums[1];
             chrNums[1] = chrNums[2];
             chrNums[2] = tmp;
-            Console.WriteLine("switched: {0}", new string(chrNums));
+            Console.WriteLine("switched: {0}", new String(chrNums));
           }
-          public static string strReverse(string s)
+          
+          public static string chrReverse(char[] s)
           {
-              char[] arr = s.ToCharArray();
-              Array.Reverse(arr);
-              return new string(arr);
+              Array.Reverse(s);
+              return new String(s);
           }
     }
 }
